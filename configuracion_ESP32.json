@@ -1,0 +1,34 @@
+{
+	"BMP-280": {
+		"altitud": 98.4,
+		"I2C_SDA": 27,
+		"I2C_SDL": 26,
+		"BME280_ADDRESS": "0x76"
+	},
+	"DORMIR": {
+		"tiempo_dormir": 30,
+		"led_dormir": 2,
+		"pin_interruptor": 14
+	},
+	"THINGSPEAK": {
+		"activo": "true",
+		"ts_idCanal": 682016,
+		"ts_apiKey": "97NLSTM09GZ2OK0I",
+		"ts_server": "api.thingspeak.com1"
+		},
+	"OPENWEATHER": {
+		"activo": "true",
+		"ow_idCiudad": "6361046",
+		"ow_apiKey": "69bd630ab214f690308721da02e2e615",
+		"ow_server": "api.openweathermap.org"
+		},
+	"MQTT": {
+		"activo": "true",
+		"mqtt_server": "192.168.0.30",
+		"topic": "casa/Temperatura"
+	},
+	"version": {
+		"id": 1.0,
+		"fecha": "27/01/2019"
+	}
+}
