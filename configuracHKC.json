@@ -1,0 +1,11 @@
+{
+	"configuracion": {
+		"JSON_segundosEsperaSensor": 4,
+		"JSON_enviarDatosCadaXLLamadas": 450,
+		"JSON_TOLERANCIA_CONSUMO": 2
+	},
+	"version": {
+		"id": 1.0,
+		"fecha": "17/11/2019"
+	}
+}
