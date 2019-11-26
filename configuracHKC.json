@@ -3,7 +3,7 @@
 		"JSON_segundosEsperaSensor": 1,
 		"JSON_enviarDatosCadaXLLamadas": 300,
 		"JSON_TOLERANCIA_CONSUMO": 2,
-		"JSON_permiteOTA": "SI"
+		"JSON_permiteOTA": "NO"
 	},
 	"version": {
 		"id": 1.0,
