@@ -1,7 +1,7 @@
 {
 	"configuracion": {
 		"JSON_segundosEsperaSensor": 1,
-		"JSON_enviarDatosCadaXLLamadas": 600,
+		"JSON_enviarDatosCadaXLLamadas": 1800,
 		"JSON_TOLERANCIA_CONSUMO": 2,
 		"JSON_permiteOTA": "SI",
 		"JSON_DEBUG": "NO"
