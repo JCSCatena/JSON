@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions name="QueryServiceService" targetNamespace="urn:juntadeandalucia:cice:pfirma:query:v2.0" xmlns:pfirma="urn:juntadeandalucia:cice:pfirma:query:v2.0" xmlns:request="urn:juntadeandalucia:cice:pfirma:query:request:v2.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:type="urn:juntadeandalucia:cice:pfirma:type:v2.0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+<xsd:schema xmlns:pfirma="urn:juntadeandalucia:cice:pfirma:query:v2.0" xmlns:request="urn:juntadeandalucia:cice:pfirma:query:request:v2.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:type="urn:juntadeandalucia:cice:pfirma:type:v2.0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:import namespace="urn:juntadeandalucia:cice:pfirma:query:request:v2.0" schemaLocation="https://portafirmas.desarrollo.cap.junta-andalucia.es/pfirma/servicesv2/QueryService?xsd=schemas/query.xsd" />
+		</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="queryStatesResponse">
+    <wsdl:part element="request:queryStatesResponse" name="queryStatesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="downloadReport">
+    <wsdl:part element="request:downloadReport" name="downloadReport">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryRequestList">
+    <wsdl:part element="request:queryRequestList" name="queryRequestList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="downloadSign">
+    <wsdl:part element="request:downloadSign" name="downloadSign">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryUsers">
+    <wsdl:part element="request:queryUsers" name="queryUsers">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryDocumentTypes">
+    <wsdl:part element="request:queryDocumentTypes" name="queryDocumentTypes">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryHistoricResponse">
+    <wsdl:part element="request:queryHistoricResponse" name="queryHistoricResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="downloadReportResponse">
+    <wsdl:part element="request:downloadReportResponse" name="downloadReportResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="downloadDocumentResponse">
+    <wsdl:part element="request:downloadDocumentResponse" name="downloadDocumentResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="downloadDocument">
+    <wsdl:part element="request:downloadDocument" name="downloadDocument">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryRequestListResponse">
+    <wsdl:part element="request:queryRequestListResponse" name="queryRequestListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryHistoricListResponse">
+    <wsdl:part element="request:queryHistoricListResponse" name="queryHistoricListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryJobs">
+    <wsdl:part element="request:queryJobs" name="queryJobs">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryRequest">
+    <wsdl:part element="request:queryRequest" name="queryRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryUsersResponse">
+    <wsdl:part element="request:queryUsersResponse" name="queryUsersResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryHistoric">
+    <wsdl:part element="request:queryHistoric" name="queryHistoric">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryJobsResponse">
+    <wsdl:part element="request:queryJobsResponse" name="queryJobsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryCommentsResponse">
+    <wsdl:part element="request:queryCommentsResponse" name="queryCommentsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pfirmaException">
+    <wsdl:part element="type:exceptionInfo" name="pfirmaException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryDocumentTypesResponse">
+    <wsdl:part element="request:queryDocumentTypesResponse" name="queryDocumentTypesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryRequestResponse">
+    <wsdl:part element="request:queryRequestResponse" name="queryRequestResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryCsvResponse">
+    <wsdl:part element="request:queryCsvResponse" name="queryCsvResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryCsv">
+    <wsdl:part element="request:queryCsv" name="queryCsv">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryHistoricList">
+    <wsdl:part element="request:queryHistoricList" name="queryHistoricList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryStates">
+    <wsdl:part element="request:queryStates" name="queryStates">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryComments">
+    <wsdl:part element="request:queryComments" name="queryComments">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="downloadSignResponse">
+    <wsdl:part element="request:downloadSignResponse" name="downloadSignResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="QueryService">
+    <wsdl:operation name="downloadSign">
+      <wsdl:input message="pfirma:downloadSign" name="downloadSign">
+    </wsdl:input>
+      <wsdl:output message="pfirma:downloadSignResponse" name="downloadSignResponse">
+    </wsdl:output>
+      <wsdl:fault message="pfirma:pfirmaException" name="pfirmaException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryCsv">
+      <wsdl:input message="pfirma:queryCsv" name="queryCsv">
+    </wsdl:input>
+      <wsdl:output message="pfirma:queryCsvResponse" name="queryCsvResponse">
+    </wsdl:output>
+      <wsdl:fault message="pfirma:pfirmaException" name="pfirmaException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryUsers">
+      <wsdl:input message="pfirma:queryUsers" name="queryUsers">
+    </wsdl:input>
+      <wsdl:output message="pfirma:queryUsersResponse" name="queryUsersResponse">
+    </wsdl:output>
+      <wsdl:fault message="pfirma:pfirmaException" name="pfirmaException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryDocumentTypes">
+      <wsdl:input message="pfirma:queryDocumentTypes" name="queryDocumentTypes">
+    </wsdl:input>
+      <wsdl:output message="pfirma:queryDocumentTypesResponse" name="queryDocumentTypesResponse">
+    </wsdl:output>
+      <wsdl:fault message="pfirma:pfirmaException" name="pfirmaException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="downloadDocument">
+      <wsdl:input message="pfirma:downloadDocument" name="downloadDocument">
+    </wsdl:input>
+      <wsdl:output message="pfirma:downloadDocumentResponse" name="downloadDocumentResponse">
+    </wsdl:output>
+      <wsdl:fault message="pfirma:pfirmaException" name="pfirmaException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="downloadReport">
+      <wsdl:input message="pfirma:downloadReport" name="downloadReport">
+    </wsdl:input>
+      <wsdl:output message="pfirma:downloadReportResponse" name="downloadReportResponse">
+    </wsdl:output>
+      <wsdl:fault message="pfirma:pfirmaException" name="pfirmaException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryStates">
+      <wsdl:input message="pfirma:queryStates" name="queryStates">
+    </wsdl:input>
+      <wsdl:output message="pfirma:queryStatesResponse" name="queryStatesResponse">
+    </wsdl:output>
+      <wsdl:fault message="pfirma:pfirmaException" name="pfirmaException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryRequest">
+      <wsdl:input message="pfirma:queryRequest" name="queryRequest">
+    </wsdl:input>
+      <wsdl:output message="pfirma:queryRequestResponse" name="queryRequestResponse">
+    </wsdl:output>
+      <wsdl:fault message="pfirma:pfirmaException" name="pfirmaException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryJobs">
+      <wsdl:input message="pfirma:queryJobs" name="queryJobs">
+    </wsdl:input>
+      <wsdl:output message="pfirma:queryJobsResponse" name="queryJobsResponse">
+    </wsdl:output>
+      <wsdl:fault message="pfirma:pfirmaException" name="pfirmaException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryComments">
+      <wsdl:input message="pfirma:queryComments" name="queryComments">
+    </wsdl:input>
+      <wsdl:output message="pfirma:queryCommentsResponse" name="queryCommentsResponse">
+    </wsdl:output>
+      <wsdl:fault message="pfirma:pfirmaException" name="pfirmaException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryHistoric">
+      <wsdl:input message="pfirma:queryHistoric" name="queryHistoric">
+    </wsdl:input>
+      <wsdl:output message="pfirma:queryHistoricResponse" name="queryHistoricResponse">
+    </wsdl:output>
+      <wsdl:fault message="pfirma:pfirmaException" name="pfirmaException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryRequestList">
+      <wsdl:input message="pfirma:queryRequestList" name="queryRequestList">
+    </wsdl:input>
+      <wsdl:output message="pfirma:queryRequestListResponse" name="queryRequestListResponse">
+    </wsdl:output>
+      <wsdl:fault message="pfirma:pfirmaException" name="pfirmaException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryHistoricList">
+      <wsdl:input message="pfirma:queryHistoricList" name="queryHistoricList">
+    </wsdl:input>
+      <wsdl:output message="pfirma:queryHistoricListResponse" name="queryHistoricListResponse">
+    </wsdl:output>
+      <wsdl:fault message="pfirma:pfirmaException" name="pfirmaException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="QueryServiceServiceSoapBinding" type="pfirma:QueryService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="downloadSign">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="downloadSign">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="downloadSignResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="pfirmaException">
+        <soap:fault name="pfirmaException" use="literal" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryCsv">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="queryCsv">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="queryCsvResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="pfirmaException">
+        <soap:fault name="pfirmaException" use="literal" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryUsers">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="queryUsers">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="queryUsersResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="pfirmaException">
+        <soap:fault name="pfirmaException" use="literal" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryDocumentTypes">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="queryDocumentTypes">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="queryDocumentTypesResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="pfirmaException">
+        <soap:fault name="pfirmaException" use="literal" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="downloadDocument">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="downloadDocument">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="downloadDocumentResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="pfirmaException">
+        <soap:fault name="pfirmaException" use="literal" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="downloadReport">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="downloadReport">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="downloadReportResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="pfirmaException">
+        <soap:fault name="pfirmaException" use="literal" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryStates">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="queryStates">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="queryStatesResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="pfirmaException">
+        <soap:fault name="pfirmaException" use="literal" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryJobs">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="queryJobs">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="queryJobsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="pfirmaException">
+        <soap:fault name="pfirmaException" use="literal" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryRequest">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="queryRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="queryRequestResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="pfirmaException">
+        <soap:fault name="pfirmaException" use="literal" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryComments">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="queryComments">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="queryCommentsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="pfirmaException">
+        <soap:fault name="pfirmaException" use="literal" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryHistoric">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="queryHistoric">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="queryHistoricResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="pfirmaException">
+        <soap:fault name="pfirmaException" use="literal" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryRequestList">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="queryRequestList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="queryRequestListResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="pfirmaException">
+        <soap:fault name="pfirmaException" use="literal" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryHistoricList">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="queryHistoricList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="queryHistoricListResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="pfirmaException">
+        <soap:fault name="pfirmaException" use="literal" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="QueryServiceService">
+    <wsdl:port binding="pfirma:QueryServiceServiceSoapBinding" name="QueryServicePort">
+      <soap:address location="https://portafirmas.desarrollo.cap.junta-andalucia.es/pfirma/servicesv2/QueryService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
